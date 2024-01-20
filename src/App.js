@@ -8,7 +8,7 @@ const App = () => {
   console.log("OKEEEE")
 
   return (
-    <Router>
+    <Router basename="/react-homework-erajaya-danang">
       <Routes>
         <Route path="/" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
