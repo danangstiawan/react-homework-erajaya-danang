@@ -132,9 +132,7 @@ const Cart = () => {
   return (
     <CartContainer>
       <CartHeader>Shopping Cart</CartHeader>
-      <BackButton onClick={() => navigate("/")}>
-        Lanjutkan Berbelanja
-      </BackButton>
+      <BackButton onClick={() => navigate("/")}>Continue Shopping</BackButton>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -154,7 +152,7 @@ const Cart = () => {
           ))}
         </CartList>
       )}
-      <TotalPrice>Total Price: ${calculateTotalPrice()}</TotalPrice>
+      <TotalPrice>Grand Total: ${calculateTotalPrice()}</TotalPrice>
       <ClearCartButton onClick={handleClearCart}>Clear Cart</ClearCartButton>
     </CartContainer>
   );

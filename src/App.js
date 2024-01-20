@@ -5,8 +5,6 @@ import { Product } from './pages/Product';
 
 const App = () => {
 
-  console.log("OKEEEE")
-
   return (
     <Router>
       <Routes>
