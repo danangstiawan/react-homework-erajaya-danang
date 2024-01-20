@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import Cart from './pages/Cart';
 import { Product } from './pages/Product';
 
@@ -8,7 +8,7 @@ const App = () => {
   console.log("OKEEEE")
 
   return (
-    <Router basename="/react-homework-erajaya-danang">
+    <Router>
       <Routes>
         <Route path="/" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
